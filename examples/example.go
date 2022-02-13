@@ -42,8 +42,8 @@ func main() {
 	if err := dataSaver.Load("./example.tmp", &secondObject); err != nil {
 		log.Fatalln(err)
 	}
-	// o and o2 are now the same
-	// and check out file.tmp - you'll see the JSON file
 
+	// Now firstObject and secondObject should be the same
+	fmt.Printf("%v", firstObject)
 	fmt.Printf("%v", secondObject)
 }
